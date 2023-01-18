@@ -1,9 +1,7 @@
-// const inter = Inter({ subsets: ['latin'] })
+import { FC } from 'react';
 
-export default function Home() {
-  return (
-    <h1>
-  Hello World
-    </h1>
-  )
-}
+const Home: FC = () => {
+    return <h1>Hello World</h1>;
+};
+
+export default Home;
