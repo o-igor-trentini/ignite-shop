@@ -54,7 +54,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
             id,
             name,
             imageUrl: images[0],
-            price: new Intl.NumberFormat('pt-Br', {
+            price: new Intl.NumberFormat('pt-BR', {
                 style: 'currency',
                 currency: 'BRL',
             }).format(Number(unit_amount) / 100),
