@@ -9,6 +9,7 @@ import Stripe from 'stripe';
 import Link from 'next/link';
 import { ProductType } from '@/pages/product/[id]';
 import { setMoneyMask } from '@/utils/string';
+import Head from 'next/head';
 
 interface HomeProps {
     products: ProductType[];
@@ -23,20 +24,26 @@ const Home: FC<HomeProps> = ({ products }) => {
     });
 
     return (
-        <HomeContainer ref={sliderRef}>
-            {products.map(({ id, name, imageUrl, price }) => (
-                <Link key={id} href={`product/${id}`} prefetch={false}>
-                    <Product className="keen-slider__slide">
-                        <Image src={imageUrl} alt="" width={520} height={520} />
+        <>
+            <Head>
+                <title>Home | Ignite Shop</title>
+            </Head>
 
-                        <footer>
-                            <strong>{name}</strong>
-                            <span>{price}</span>
-                        </footer>
-                    </Product>
-                </Link>
-            ))}
-        </HomeContainer>
+            <HomeContainer ref={sliderRef}>
+                {products.map(({ id, name, imageUrl, price }) => (
+                    <Link key={id} href={`product/${id}`} prefetch={false}>
+                        <Product className="keen-slider__slide">
+                            <Image src={imageUrl} alt="" width={520} height={520} />
+
+                            <footer>
+                                <strong>{name}</strong>
+                                <span>{price}</span>
+                            </footer>
+                        </Product>
+                    </Link>
+                ))}
+            </HomeContainer>
+        </>
     );
 };
 
