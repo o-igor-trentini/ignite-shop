@@ -1,40 +1,60 @@
-figma https://www.figma.com/file/ndIdFJIfyeHBWe1JWkWrBR/Ignite-Shop-(Copy)?node-id=0%3A1&t=NueNV9xK032Ps0WM-0
+<img src="https://drive.google.com/uc?export=view&id=1I8Gil5iH_K_4CeHBAvK-JlmDxGOIN-he" alt="" width="58" height="58" align="right" />
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Shop
 
-## Getting Started
+> Ignite Shop é um projeto desenvolvido para explorar o framework [NextJS][], entendo o conceito de server-side-rendering
+> (SSR) e static-site-generation (SSG).
+> <br/><br/> O desenvolvimento da aplicação foi construido a partir da documentação que pode ser encontrada [aqui][].
 
-First, run the development server:
+Este projeto é o quarto do módulo de ReactJS 2022, um e-commerce que utiliza a bibliteca de produtos cadastrados no
+[Stripe][], do menu ao checkout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Me veja em funcionamento [clicando aqui][] ***:)***
+
+## Desenvolvimento
+
+### Construído com
+
+- ReactJS
+- NextJS
+- Typescript
+- Stitches
+- Stripe
+
+## Instalando / Começando
+
+Clone este repositório com:
+
+```shell
+git@github.com:o-igor-trentini/ignite-shop.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Use o [npm][] para instalar as dependências:
 
-You can start editing the page by modifying `pages/[id].tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+E use o seguinte comando para iniciar o projeto em modo de desenvolvimento:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```shell
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Variáveis de ambiente
+Para que a aplicação funcione, é necessário informar as variáveis de ambientes:
 
-## Learn More
+- `NEXT_URL`: Endereço da aplicação.
+- `STRIPE_SECRET_KEY`: Chave secreta da API do Stripe.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Powered by: [Rocketseat][] 🚀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[ReactJS]:  https://reactjs.org/
+[Rocketseat]: https://www.rocketseat.com.br/
+[clicando aqui]: https://igor-trentini--ignite-shop.vercel.app/
+[npm]: https://www.npmjs.com/
+[aqui]: https://www.figma.com/file/ndIdFJIfyeHBWe1JWkWrBR/Ignite-Shop-(Copy)?node-id=0%3A1&t=NueNV9xK032Ps0WM-0
+[NextJS]: https://nextjs.org/
+[Stripe]: https://stripe.com/br
